@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 
 const path2key = path.join(__dirname, "message.txt")
 
-app.get("/challengeTwo/:x", (req, res)=> {
+app.get("/cmd-practice/challengeTwo/:x", (req, res)=> {
     let {x} = req.params
     if (isNaN(x)) {
     
@@ -39,7 +39,7 @@ app.get("/challengeTwo/:x", (req, res)=> {
 
 
 
-app.post("/challengeTwo/cmds3cr37k3y", (req, res) => {
+app.post("/cmd-practice/challengeTwo/cmds3cr37k3y", (req, res) => {
     const userAgent = req.headers['user-agent']
     const viaCurl = userAgent.slice(0, userAgent.indexOf("/")).toLowerCase() == "curl" 
     const {key} = req.body
