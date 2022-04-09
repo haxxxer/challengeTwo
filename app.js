@@ -49,6 +49,8 @@ app.post("/cmd-practice/challengeTwo/cmds3cr37k3y", (req, res) => {
         } else if (userAgent.includes("python")) {
             res.json({code: "l3@rn-b@$h",level: "easy", prize: "one month if you are the first to reach here"})
         }
+    } else {
+        res.json({message: "Nope! try harder.."})
     }
 
 })
